@@ -208,13 +208,13 @@ export default function Home() {
             <p>Using the links below, you can join our various groups.</p>
           </div>
           <div className="socials">
-            <a target="_blank" href="https://twitter.com/valuablecoin1"> <img src="./assets/img/social-icons/twitter.svg" alt="twitter" /></a>
-            <a target="_blank" href="https://t.me/valuablecoins">  <img src="./assets/img/social-icons/telegramm.svg" alt="telegram" /></a>
+            <a target="_blank" href="https://twitter.com/"> <img src="./assets/img/social-icons/twitter.svg" alt="twitter" /></a>
+            <a target="_blank" href="https://t.me/">  <img src="./assets/img/social-icons/telegramm.svg" alt="telegram" /></a>
           </div>
 
           <div className="partners">
-            <a target="_blank" href="https://medium.com/@valuablecoin"><div>Medium</div></a>
-            <a target="_blank" href="https://bscscan.com/token/0xF6e497Bd65DfB7c0556020DD68d007f0AC76bc6a"><div>BSCSCAN</div></a>
+            <a target="_blank" href="https://medium.com/"><div>Medium</div></a>
+            <a target="_blank" href="https://bscscan.com/token/"><div>BSCSCAN</div></a>
             {/* <a target="_blank" href="#"> <div>CoinMarketCap (Coming soon)</div></a>
             <a target="_blank" href="#">  <div>CoinGecko (Coming soon)</div></a> */}
           </div>
