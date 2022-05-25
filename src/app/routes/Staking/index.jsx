@@ -51,22 +51,22 @@ export default function Staking() {
                         <div className="stake-stat">
                             <div className="item">
                                 <span className="property">Wallet Balance</span>
-                                <span className="value"> <span id="contract">{vcBalance.toFixed(6)}</span> VC</span>
+                                <span className="value"> <span id="contract">{vcBalance.toFixed(6)}</span> In-Dex Sale</span>
                             </div>
 
                             <div className="item">
                                 <span className="property">Your Total Deposit</span>
-                                <span className="value"> <span id="contract">{totalDeposit.toFixed(6)}</span> VC</span>
+                                <span className="value"> <span id="contract">{totalDeposit.toFixed(6)}</span> In-Dex Sale</span>
                             </div>
                             <div className="item">
                                 <span className="property">Total Claimed</span>
-                                <span className="value"> <span id="contract">{totalWithdrawn.toFixed(6)}</span> VC</span>
+                                <span className="value"> <span id="contract">{totalWithdrawn.toFixed(6)}</span> In-Dex Sale</span>
                             </div>
                         </div>
 
                         <div className="stake-value">
                             <input id="amount" type="text" className="" value={depositVCAmount} onChange={(e) => setDepositVCAmount(e.currentTarget.value)} />
-                            <span>VC</span>
+                            <span>In-Dex Sale</span>
                         </div>
 
                         <div className="stake-button active">
@@ -77,12 +77,12 @@ export default function Staking() {
 
                         <div className="stake-rewards">
                             <span className="property">Your Rewards</span>
-                            <span className="value"> <span id="contract">{dividends.toFixed(6)}</span> VC</span>
+                            <span className="value"> <span id="contract">{dividends.toFixed(6)}</span> In-Dex Sale</span>
                         </div>
 
                         <div className="stake-rewards">
                             <span className="property">Your Referral Bonus</span>
-                            <span className="value"> <span id="contract">{bonus.toFixed(6)}</span> VC</span>
+                            <span className="value"> <span id="contract">{bonus.toFixed(6)}</span> In-Dex Sale</span>
                         </div>
 
                         <div className="stake-action-buttons">
