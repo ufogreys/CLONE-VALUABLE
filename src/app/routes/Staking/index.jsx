@@ -42,7 +42,7 @@ export default function Staking() {
                             <a href="https://medium.com/@valuablecoin/valuablecoins-staking-details-4e72e6402dad" target="_blank">Staking Details</a>
                         </div>                        
                         <ConnectBtn />
-                        <h2>ValuableCoins staking contract is designed to payout investors 1.5% a day with a 265% ROI. The more VC appreciates in value the higher your payout is in USD.
+                        <h2>In-Dex Sale staking contract is designed to payout investors 1.5% a day with a 265% ROI. The more In-Dex Sale appreciates in value the higher your payout is in USD.
                             Please read our document page for full staking details.
                         </h2>
                     </div>
@@ -117,7 +117,7 @@ export default function Staking() {
                     <div className="referral">
                         <h2> Referral Link</h2>
                         <input className="referral-link" id="ref-address" value={`https://valuablecointoken.com/staking?ref=${account?account:''}`} readOnly/>
-                        <p>Earn 15% of the VC used to stake VC from anyone who uses your referral link</p>
+                        <p>Earn 15% of the In-Dex Sale used to stake In-Dex Sale from anyone who uses your referral link</p>
                     </div>
 
                     <div className="social-handles">
