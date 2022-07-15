@@ -1039,7 +1039,7 @@ section:not(:first-child) {
 
 /*Footer*/
 .footer {
-  background-color: #00FA9A;
+  background-color: #d3d3d3;
   position: relative;
   width: 100%;
   display: flex;
