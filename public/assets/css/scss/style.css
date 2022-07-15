@@ -73,7 +73,7 @@ html {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #D09410;
+  background: #00FA9A;
 }
 
 section:not(:first-child) {
