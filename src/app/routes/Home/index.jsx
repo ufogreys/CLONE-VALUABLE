@@ -22,24 +22,24 @@ export default function Home() {
                 <li data-aos="fade-in" data-aos-duration="3000"><a href="#roadmap">Roadmap</a> </li>
                 <li data-aos="fade-in" data-aos-duration="3000"><a href="#tokenomics">Tokenomics</a> </li>
                 <li data-aos="fade-in" data-aos-duration="3000"><a href="https://poocoin.app/tokens/" target="_blank">Charts</a> </li>
-                <li className="mobile-visible" data-aos="fade-in" data-aos-duration="3000"><a href="/staking">Begin Staking</a> </li>
+                <li className="mobile-visible" data-aos="fade-in" data-aos-duration="3000"><a href="/staking">Staking</a> </li>
               </ul>
             </div>
 
             <div className="connect">
               <a href="./staking" target="_blank">
-                <div className="button animation animated fadeInUp"><h5>Begin Staking</h5> </div>
+                <div className="button animation animated fadeInUp"><h5>Staking</h5> </div>
               </a>
             </div>
             <div className="connect">
               <a href="https://medium.com/" target="_blank">
-                <div className="button animation animated fadeInUp"><h5>Project Details</h5> </div>
+                <div className="button animation animated fadeInUp"><h5>Whitepaper</h5> </div>
               </a>
             </div>
 
             <div className="connect-mobile">
               <a href="https://medium.com/">
-                <div className="button animation animated fadeInUp"><h5>Project Details</h5> </div>
+                <div className="button animation animated fadeInUp"><h5>Whitepaper</h5> </div>
               </a>
             </div>
             <div className="hamburger">
