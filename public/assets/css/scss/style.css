@@ -876,7 +876,7 @@ section:not(:first-child) {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: #ffffff;
+  background-color: #00FA9A;
 }
 .roadmap-container {
   width: 1000px;
@@ -1039,7 +1039,7 @@ section:not(:first-child) {
 
 /*Footer*/
 .footer {
-  background-color: #0D0D2B;
+  background-color: #00FA9A;
   position: relative;
   width: 100%;
   display: flex;
