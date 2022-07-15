@@ -1187,7 +1187,7 @@ section:not(:first-child) {
   text-decoration: none;
 }
 .footer-container .partners a:hover {
-  color: #F0B90B;
+  color: #20c6b6;
 }
 .footer-container .partners a div {
   margin-top: 50px;
@@ -1207,11 +1207,11 @@ section:not(:first-child) {
   line-height: 25PX;
 }
 .footer-container .copyright a {
-  color: #efb41f;
+  color: #09E6DA;
   text-decoration: none;
 }
 .footer-container .copyright a:hover {
-  color: #F0B90B;
+  color: #20c6b6;
 }
 
 /*FOR STAKING DAPP*/
