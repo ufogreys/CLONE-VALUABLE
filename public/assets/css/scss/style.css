@@ -1288,10 +1288,10 @@ section:not(:first-child) {
 .stake-house-container .connect-disconnect.active {
   box-shadow: rgba(0, 0, 0, 0.59) 6px 6px 20px 6px;
   color: rgb(23, 33, 94);
-  background-color: rgb(244, 181, 45);
+  background-color: rgb(36, 186, 255);
 }
 .stake-house-container .connect-disconnect.active.active:hover {
-  background-color: rgb(170, 126, 31);
+  background-color: rgb(168, 228, 255);
   box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px -1px, rgba(0, 0, 0, 0.14) 0px 4px 5px 0px, rgba(0, 0, 0, 0.12) 0px 1px 10px 0px;
 }
 .stake-house-container .connect-disconnect:hover {
@@ -1451,10 +1451,10 @@ section:not(:first-child) {
 .stake-house-container .stake-action-buttons div.active {
   box-shadow: rgba(0, 0, 0, 0.59) 6px 6px 20px 6px;
   color: rgb(23, 33, 94);
-  background-color: rgb(244, 181, 45);
+  background-color: rgb(36, 186, 255);
 }
 .stake-house-container .stake-action-buttons div.active.active:hover {
-  background-color: rgb(170, 126, 31);
+  background-color: rgb(36, 152, 255);
   box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px -1px, rgba(0, 0, 0, 0.14) 0px 4px 5px 0px, rgba(0, 0, 0, 0.12) 0px 1px 10px 0px;
 }
 .stake-house-container .stake-action-buttons div:hover {
@@ -1466,7 +1466,7 @@ section:not(:first-child) {
   overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.59) 6px 6px 20px 6px;
   border-radius: 20px;
-  background: rgb(255, 252, 248);
+  background: rgb(36, 152, 255);
   margin-bottom: 24px;
   padding: 15px;
 }
@@ -1508,7 +1508,7 @@ section:not(:first-child) {
   overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.59) 6px 6px 20px 6px;
   border-radius: 20px;
-  background: rgb(251, 241, 225);
+  background: rgb(36, 152, 255);
   padding: 20px 10px;
   text-align: center;
 }
