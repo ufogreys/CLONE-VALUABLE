@@ -806,7 +806,7 @@ section:not(:first-child) {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: #FAF8F8;
+  background-color: #00FA9A;
 }
 .tokenomics-container {
   width: 1300px;
