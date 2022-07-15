@@ -1288,10 +1288,10 @@ section:not(:first-child) {
 .stake-house-container .connect-disconnect.active {
   box-shadow: rgba(0, 0, 0, 0.59) 6px 6px 20px 6px;
   color: rgb(23, 33, 94);
-  background-color: rgb(153, 223, 255);
+  background-color: rgb(0, 255, 127);
 }
 .stake-house-container .connect-disconnect.active.active:hover {
-  background-color: rgb(71, 197, 255);
+  background-color: rgb(66, 255, 152);
   box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px -1px, rgba(0, 0, 0, 0.14) 0px 4px 5px 0px, rgba(0, 0, 0, 0.12) 0px 1px 10px 0px;
 }
 .stake-house-container .connect-disconnect:hover {
@@ -1454,7 +1454,7 @@ section:not(:first-child) {
   background-color: rgb(153, 223, 255);
 }
 .stake-house-container .stake-action-buttons div.active.active:hover {
-  background-color: rgb(71, 197, 255);
+  background-color: rgb(66, 255, 152);
   box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px -1px, rgba(0, 0, 0, 0.14) 0px 4px 5px 0px, rgba(0, 0, 0, 0.12) 0px 1px 10px 0px;
 }
 .stake-house-container .stake-action-buttons div:hover {
