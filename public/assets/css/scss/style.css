@@ -855,7 +855,7 @@ section:not(:first-child) {
   transition: all ease 0.6s;
 }
 .tokenomics-container .bottom .nomics:hover {
-  background-color: #FFA953;
+  background-color: #09E6DA;
 }
 .tokenomics-container .bottom .nomics:hover p {
   color: #FFFFFF;
