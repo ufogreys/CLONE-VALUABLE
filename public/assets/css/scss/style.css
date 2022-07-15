@@ -1220,7 +1220,7 @@ section:not(:first-child) {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: #F9F3F3;
+  background-color: #F0B90B;
   overflow: hidden;
 }
 .stake-house:before {
