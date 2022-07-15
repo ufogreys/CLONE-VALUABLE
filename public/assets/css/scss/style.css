@@ -73,7 +73,7 @@ html {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #00FA9A;
+  background: #00ced1;
 }
 
 section:not(:first-child) {
@@ -413,7 +413,7 @@ section:not(:first-child) {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: #d09410;
+  background-color: ##00FA9A;
   overflow: hidden;
 }
 .hero::before {
