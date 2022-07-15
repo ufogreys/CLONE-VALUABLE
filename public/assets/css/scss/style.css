@@ -1451,7 +1451,7 @@ section:not(:first-child) {
 .stake-house-container .stake-action-buttons div.active {
   box-shadow: rgba(0, 0, 0, 0.59) 6px 6px 20px 6px;
   color: rgb(23, 33, 94);
-  background-color: rgb(36, 186, 255);
+  background-color: rgb(77, 199, 255);
 }
 .stake-house-container .stake-action-buttons div.active.active:hover {
   background-color: rgb(36, 152, 255);
