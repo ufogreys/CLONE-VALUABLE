@@ -249,7 +249,7 @@ section:not(:first-child) {
   }
 }
 .header-container .right-side .connect a div.button:hover {
-  background-image: linear-gradient(90deg, #E57506 27.75%, #F0B921 100%);
+  background-image: linear-gradient(90deg, #111111 27.75%, #d3d3d3 100%);
 }
 .header-container .right-side .connect-mobile a {
   color: #fff;
@@ -263,7 +263,7 @@ section:not(:first-child) {
   }
 }
 .header-container .right-side .connect-mobile a div.button {
-  background-image: linear-gradient(90deg, #E57506 27.75%, #F0B921 100%);
+  background-image: linear-gradient(90deg, #111111 27.75%, #d3d3d3 100%);
   padding: 14px 35px;
   border-radius: 25px;
   width: 182px;
@@ -282,7 +282,7 @@ section:not(:first-child) {
   }
 }
 .header-container .right-side .connect-mobile a div.button:hover {
-  background-image: linear-gradient(90deg, #E57506 27.75%, #F0B921 100%);
+  background-image: linear-gradient(90deg, #111111 27.75%, #d3d3d3 100%);
 }
 .header-container .right-side .hamburger {
   display: none;
@@ -376,7 +376,7 @@ section:not(:first-child) {
   position: relative;
   /* Gradient */
   padding: 50px 150px 50px 50px;
-  background: linear-gradient(90deg, #E57506 27.75%, #F0B921 100%);
+  background: linear-gradient(90deg, #111111 27.75%, #d3d3d3 100%);
   box-shadow: 0px 16px 44px rgba(181, 181, 181, 0.15);
   border-radius: 20px;
   color: #fff;
@@ -567,7 +567,7 @@ section:not(:first-child) {
   }
 }
 .hero-container .left .button-group .buy {
-  background: linear-gradient(90deg, #E57506 27.75%, #F0B921 100%);
+  background: linear-gradient(90deg, #111111 27.75%, #d3d3d3 100%);
 }
 @media screen and (max-width: 480px) {
   .hero-container .left .button-group .buy {
@@ -603,7 +603,7 @@ section:not(:first-child) {
   /* !importanté */
   border-radius: inherit;
   /* !importanté */
-  background: linear-gradient(90deg, #E57506 27.75%, #F0B921 100%);
+  background: linear-gradient(90deg, #111111 27.75%, #d3d3d3 100%);
 }
 .hero-container .right {
   text-align: right;
@@ -772,13 +772,13 @@ section:not(:first-child) {
   /* !importanté */
   border-radius: inherit;
   /* !importanté */
-  background: linear-gradient(90deg, #E57506 27.75%, #F0B921 100%);
+  background: linear-gradient(90deg, #111111 27.75%, #d3d3d3 100%);
 }
 .token-details-container .right .haze-crypto:hover, .token-details-container .right .coin-gecho:hover {
-  background: linear-gradient(90deg, #E57506 27.75%, #F0B921 100%) !important;
+  background: linear-gradient(90deg, #111111 27.75%, #d3d3d3 100%) !important;
 }
 .token-details-container .right .coin-market {
-  background: linear-gradient(90deg, #E57506 27.75%, #F0B921 100%);
+  background: linear-gradient(90deg, #111111 27.75%, #d3d3d3 100%);
   position: relative;
 }
 .token-details-container .right .coin-market:hover {
@@ -796,7 +796,7 @@ section:not(:first-child) {
   /* !importanté */
   border-radius: inherit;
   /* !importanté */
-  background: linear-gradient(90deg, #E57506 27.75%, #F0B921 100%);
+  background: linear-gradient(90deg, #111111 27.75%, #d3d3d3 100%);
 }
 
 /*Staking*/
@@ -1097,7 +1097,7 @@ section:not(:first-child) {
   }
 }
 .footer-container .action-buttons a .holder {
-  background: linear-gradient(90deg, #E57506 27.75%, #F0B921 100%);
+  background: linear-gradient(90deg, #111111 27.75%, #d3d3d3 100%);
   padding: 12px;
   font-size: 12px;
 }
@@ -1107,7 +1107,7 @@ section:not(:first-child) {
   }
 }
 .footer-container .action-buttons a .liquidity, .footer-container .action-buttons a .cointelegraph {
-  background: linear-gradient(90deg, #E57506 27.75%, #F0B921 100%);
+  background: linear-gradient(90deg, #111111 27.75%, #d3d3d3 100%);
   background-clip: padding-box;
   /* !importanté */
   border: 3px solid transparent;
