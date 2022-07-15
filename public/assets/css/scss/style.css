@@ -1508,7 +1508,7 @@ section:not(:first-child) {
   overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.59) 6px 6px 20px 6px;
   border-radius: 20px;
-  background: rgb(36, 152, 255);
+  background: rgb(77, 199, 255);
   padding: 20px 10px;
   text-align: center;
 }
