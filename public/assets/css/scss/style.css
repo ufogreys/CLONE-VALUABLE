@@ -919,7 +919,7 @@ section:not(:first-child) {
 }
 .roadmap-container .bottom .map .one {
   padding: 25px;
-  background-color: #FFD7AF;
+  background-color: #00ced1;
   border-radius: 8px;
   position: relative;
   width: 350px;
@@ -945,7 +945,7 @@ section:not(:first-child) {
 }
 .roadmap-container .bottom .map .two {
   padding: 25px;
-  background-color: #FFD7AF;
+  background-color: #00ced1;
   border-radius: 8px;
   position: relative;
   width: 350px;
@@ -971,7 +971,7 @@ section:not(:first-child) {
 }
 .roadmap-container .bottom .map .three {
   padding: 25px;
-  background-color: #FFD7AF;
+  background-color: #00ced1;
   border-radius: 8px;
   position: relative;
   width: 350px;
@@ -997,7 +997,7 @@ section:not(:first-child) {
 }
 .roadmap-container .bottom .map .four {
   padding: 25px;
-  background-color: #FFD7AF;
+  background-color: #00ced1;
   border-radius: 8px;
   position: relative;
   width: 350px;
