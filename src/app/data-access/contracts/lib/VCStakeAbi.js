@@ -3,7 +3,7 @@ export default [
         "inputs": [
             {
                 "internalType": "address",
-                "name": "_ValuableCoin",
+                "name": "_In-Dex Sale",
                 "type": "address"
             }
         ],
