@@ -186,7 +186,7 @@ section:not(:first-child) {
   }
 }
 .header-container .right-side .menu ul li a:hover {
-  color: #dddddd;
+  color: #ffffff;
 }
 .header-container .right-side .menu span {
   display: none;
