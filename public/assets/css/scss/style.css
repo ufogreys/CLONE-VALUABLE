@@ -230,7 +230,7 @@ section:not(:first-child) {
   }
 }
 .header-container .right-side .connect a div.button {
-  background-image: linear-gradient(90deg, #111111 27.75%, #d3d3d3 100%);
+  background-image: linear-gradient(90deg, #111111 100%, #d3d3d3 27.75%);
   padding: 14px 35px;
   border-radius: 25px;
   width: 182px;
