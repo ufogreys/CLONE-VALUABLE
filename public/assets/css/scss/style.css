@@ -479,7 +479,7 @@ section:not(:first-child) {
 }
 .hero-container .left .button-heading {
   display: flex;
-  background-color: linear-gradient(90deg, #4681f4 100%, #33b249 27.75%);
+  background-color: linear-gradient(90deg, #4681f4 27.75%, #33b249 100%);
   padding: 0px;
   border-radius: 25px;
   width: 316px;
@@ -576,7 +576,7 @@ section:not(:first-child) {
   }
 }
 .hero-container .left .button-group .staking {
-  background: linear-gradient(90deg, #4681f4 100%, #33b249 27.75%);
+  background: linear-gradient(90deg, #4681f4 27.75%, #33b249 100%);
   width: 234px;
   color: #000;
   background-clip: padding-box;
