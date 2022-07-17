@@ -55,12 +55,12 @@ export default function Home() {
           <div className="left">
             <img className="mobile-visible hero-logo" src="assets/img/hero-logo.svg" />
 
-            <h1>In-Dex Sale Coins!</h1>
+            <h1>Web3Club Coins!</h1>
 
-            <p>In-Dex Sale is a low supply deflationary BEP20 token on the BNB Chain (A.K.A Binance Smart Chain). In-Dex Sale is a fair-launched project with no presale, venture capitalist funding, or any type of private investors that would have any advantage over new investors. The initial and max supply of In-Dex Sale is 60,100 coins. Over time as users buy, sell, make transfers, and stake In-Dex Sale (In-Dex Sale) the supply will be taken out of circulation which in theory can attribute to price appreciation.</p>
+            <p>Web3Club is a low supply deflationary BEP20 token on the BNB Chain (A.K.A Binance Smart Chain). Web3Club is a fair-launched project with no presale, venture capitalist funding, or any type of private investors that would have any advantage over new investors. The initial and max supply of Web3Club is 100000 coins. Over time as users buy, sell, make transfers, and stake Web3Club (W3C) the supply will be taken out of circulation which in theory can attribute to price appreciation.</p>
 
             <div className="button-group">
-              <a href="https://pancakeswap.finance/info/token/" target="_blank"><div className="buy"> <span>Buy In-Dex Sale Now </span> <span><img src="./assets/img/arror-right.svg" alt="" /></span> </div></a>
+              <a href="https://pancakeswap.finance/info/token/" target="_blank"><div className="buy"> <span>Buy Web3Club Now </span> <span><img src="./assets/img/arror-right.svg" alt="" /></span> </div></a>
               <a href="https://solidity.finance/audits/" target="_blank"><div className="buy"> <span>Audit</span> <span><img src="./assets/img/arror-right.svg" alt="" /></span> </div></a>
               <a href="https://t.me/" target="_blank"> <div className="staking">   <span>Join Our Group chat</span>  <span><img src="./assets/img/arror-right.svg" alt="" /></span>   </div></a>
             </div>
@@ -75,14 +75,14 @@ export default function Home() {
         <div className="about-container">
           <div className="left" data-aos="fade-right">
             <img src="./assets/img/01.svg" alt="" />
-            <h3 data-aos="fade-up" >In-Dex Sale Staking Info</h3>
-            <p data-aos="fade-up" > When a user stakes their In-Dex Sale tokens they will earn 1.5% a day with an APY of 265% (minus any token taxation). The 1.5% will be paid out in In-Dex Sale coins, meaning if the price of In-Dex Sale appreciates the overall payout in USD also increases. Users can not withdraw the initial deposit and will get their initial deposit in 67 days (1.5% x 67= 100%; 100%=initial deposit) and the rest of the 298 days will be pure profit.</p>
+            <h3 data-aos="fade-up" >Web3Club Staking Info</h3>
+            <p data-aos="fade-up" > When a user stakes their Web3Club tokens they will earn 1.5% a day with an APY of 265% (minus any token taxation). The 1.5% will be paid out in Web3Club coins, meaning if the price of Web3Club appreciates the overall payout in USD also increases. Users can not withdraw the initial deposit and will get their initial deposit in 67 days (1.5% x 67= 100%; 100%=initial deposit) and the rest of the 298 days will be pure profit.</p>
             <img className="bg-img" src="./assets/img/stake.png" alt="" />
           </div>
           <div className="right" data-aos="fade-left">
             <img src="./assets/img/02.svg" alt="" />
             <h3 data-aos="fade-up">Reflection Tokenomics</h3>
-            <p data-aos="fade-up"> In-Dex Sale has the ability to implement reflection tokenomics. However, because we are offering high apy staking initially to our users we will not turn on the reflection tokenomics until all our staking contracts can no longer pay out rewards to users. We believe since In-Dex Sale is a fair launch token, the majority of which is held by the community, reflections will benefit all users when no more rewards can no longer get paid out</p>
+            <p data-aos="fade-up"> Web3Club has the ability to implement reflection tokenomics. However, because we are offering high apy staking initially to our users we will not turn on the reflection tokenomics until all our staking contracts can no longer pay out rewards to users. We believe since I Web3Club is a fair launch token, the majority of which is held by the community, reflections will benefit all users when no more rewards can no longer get paid out</p>
             <img className="bg-img" src="./assets/img/nft.png" alt="" />
           </div>
         </div>
@@ -92,7 +92,7 @@ export default function Home() {
         <div className="tokenomics-container">
           <div className="top">
             <h1 data-aos="fade-up">Tokenomics</h1>
-            <p data-aos="fade-up"> With a total of 60,100 In-Dex Sale tokens, the following amounts have been allotted for different purposes:</p>
+            <p data-aos="fade-up"> With a total of 100000 Web3Club tokens, the following amounts have been allotted for different purposes:</p>
           </div>
 
           <div className="bottom">
@@ -103,7 +103,7 @@ export default function Home() {
 
             <div className="nomics" data-aos="fade-down">
               <h3>1% Burn</h3>
-              <p>1% of all transactions will be burnt. This burn mechanism will reduce the total supply of In-Dex Sale over time.</p>
+              <p>1% of all transactions will be burnt. This burn mechanism will reduce the total supply of Web3Club over time.</p>
             </div>
 
             <div className="nomics" data-aos="flip-down">
@@ -113,13 +113,13 @@ export default function Home() {
 
             <div className="nomics" data-aos="flip-up" >
               <h3>10% Tokens To Initial Staking Pool</h3>
-              <p>6,010 tokens will be palced in a smart contract to payout initial stakers who stake In-Dex Sale.</p>
+              <p>6,010 tokens will be palced in a smart contract to payout initial stakers who stake Web3Club.</p>
             </div>
 
             <div className="nomics" data-aos="flip-down" >
               <h3>5% For Future Rewards</h3>
               <p>3,005 tokens will be placed in a token lock smart contract that will lock these tokens for 95 days.
-                These tokens will be used in the future for staking rewards when 10% initial rewards run out. In-Dex Sale is not an inflationary token, no more can ever be minted,
+                These tokens will be used in the future for staking rewards when 10% initial rewards run out. Web3Club is not an inflationary token, no more can ever be minted,
                 however we will think of a way to reward users long term throughout the years.</p>
             </div>
 
@@ -127,14 +127,14 @@ export default function Home() {
               <h3>1% To Marketing Wallet</h3>
               <p>601 tokens will be held by the developer for marketing and development purposes.</p>
               <br/>
-              <a href="https://bscscan.com/address/0x8BdD8aa79b118BB007208B3496E0Ed53D76d35eF" target="_blank" className="dev-wallet-address">Dev Wallet</a>
+              <a href="https://bscscan.com/address/" target="_blank" className="dev-wallet-address">Dev Wallet</a>
             </div>
 
             <div className="nomics" data-aos="flip-down">
               <h3>4% To Developers</h3>
-              <p>2,404 tokens will be locked away in a smart contract for two years and this will be the developers tokens for creating In-Dex Sale.</p>
+              <p>2,404 tokens will be locked away in a smart contract for two years and this will be the developers tokens for creating Web3Club.</p>
               <br/>
-              <a href="https://bscscan.com/address/0x8BdD8aa79b118BB007208B3496E0Ed53D76d35eF" target="_blank" className="dev-wallet-address">Dev Wallet</a>
+              <a href="https://bscscan.com/address/" target="_blank" className="dev-wallet-address">Dev Wallet</a>
             </div>
           </div>
         </div>
@@ -151,10 +151,10 @@ export default function Home() {
               <div className="one">
                 <h3>Developement</h3>
                 <ul>
-                  <li>Create the In-Dex Sale smart contract</li>
-                  <li> Create a website for In-Dex Sale</li>
-                  <li> Get In-Dex Sale audited</li>
-                  <li> Do a fair launch for In-Dex Sale</li>
+                  <li>Create the Web3Club smart contract</li>
+                  <li> Create a website for Web3Club</li>
+                  <li> Get Web3Club audited</li>
+                  <li> Do a fair launch for Web3Club</li>
                 </ul>
                 <img src="./assets/img/one.png" />
               </div>
@@ -166,7 +166,7 @@ export default function Home() {
               <div className="two">
                 <h3>Marketing & Initial Community Building</h3>
                 <ul>
-                  <li>Once the fair launch happens marketing will be necessary to build the initial community for In-Dex Sale.</li>
+                  <li>Once the fair launch happens marketing will be necessary to build the initial community for Web3Club.</li>
                 </ul>
                 <img src="./assets/img/two.png" />
               </div>
@@ -218,7 +218,7 @@ export default function Home() {
             {/* <a target="_blank" href="#"> <div>CoinMarketCap (Coming soon)</div></a>
             <a target="_blank" href="#">  <div>CoinGecko (Coming soon)</div></a> */}
           </div>
-          <div className="copyright"><p> Copyright © 2022 — In-Dex Sale . | ALL RIGHTS RESERVED </p></div>
+          <div className="copyright"><p> Copyright © 2022 — Web3Club . | ALL RIGHTS RESERVED </p></div>
         </div>
       </section>
     </>
