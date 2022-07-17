@@ -567,7 +567,7 @@ section:not(:first-child) {
   }
 }
 .hero-container .left .button-group .buy {
-  background: linear-gradient(90deg, #111111 27.75%, #d3d3d3 100%);
+  background: linear-gradient(90deg, #4681f4 27.75%, #33b249 100%);
 }
 @media screen and (max-width: 480px) {
   .hero-container .left .button-group .buy {
@@ -603,7 +603,7 @@ section:not(:first-child) {
   /* !importanté */
   border-radius: inherit;
   /* !importanté */
-  background: linear-gradient(90deg, #111111 27.75%, #d3d3d3 100%);
+  background: linear-gradient(90deg, #55c2da 27.75%, #5adbb5 100%);
 }
 .hero-container .right {
   text-align: right;
