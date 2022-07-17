@@ -413,7 +413,7 @@ section:not(:first-child) {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: #00FA9A;
+  background-color: radial-gradient(circle at 103.03% 50%, #55c5a2 0, #46c5ab 5.56%, #36c6b4 11.11%, #23c6be 16.67%, #02c6c7 22.22%, #00c5d0 27.78%, #00c5d8 33.33%, #00c4e0 38.89%, #00c2e7 44.44%, #0cc1ed 50%, #2cbff2 55.56%, #41bdf6 61.11%, #55bbfa 66.67%, #66b8fc 72.22%, #77b6fc 77.78%, #87b3fc 83.33%, #96b0fb 88.89%, #a5acf8 94.44%, #b2a9f4 100%);  ;
   overflow: hidden;
 }
 .hero::before {
