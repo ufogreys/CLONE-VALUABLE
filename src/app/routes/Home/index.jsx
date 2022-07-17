@@ -57,12 +57,12 @@ export default function Home() {
 
             <h1>Web3Club Coins!</h1>
 
-            <p>Web3Club is a low supply deflationary BEP20 token on the BNB Chain (A.K.A Binance Smart Chain). Web3Club is a fair-launched project with no presale, venture capitalist funding, or any type of private investors that would have any advantage over new investors. The initial and max supply of Web3Club is 100000 coins. Over time as users buy, sell, make transfers, and stake Web3Club (W3C) the supply will be taken out of circulation which in theory can attribute to price appreciation.</p>
+            <p>Web3Club is a governance deflationary BEP20 token. Web3Club is a presale, venture capitalist funding. The initial and max supply of Web3Club is 100000 coins. As timer traders buy, sell, stake, make transfers, and  Web3Club (W3C) the supply will go down of circulation which in theory can attribute to price go up.</p>
 
             <div className="button-group">
-              <a href="https://pancakeswap.finance/info/token/" target="_blank"><div className="buy"> <span>Buy now Web3Club</span> <span><img src="./assets/img/arror-right.svg" alt="" /></span> </div></a>
-              <a href="https://solidity.finance/audits/" target="_blank"><div className="buy"> <span>Audit</span> <span><img src="./assets/img/arror-right.svg" alt="" /></span> </div></a>
-              <a href="https://t.me/" target="_blank"> <div className="staking">   <span>Join Our Group chat</span>  <span><img src="./assets/img/arror-right.svg" alt="" /></span>   </div></a>
+              <a href="https://www.pinksale.finance/" target="_blank"><div className="buy"> <span>Buy now Web3Club</span> <span><img src="./assets/img/arror-right.svg" alt="" /></span> </div></a>
+              <a href="https://certik.com/projects/" target="_blank"><div className="buy"> <span>Audit</span> <span><img src="./assets/img/arror-right.svg" alt="" /></span> </div></a>
+              <a href="https://t.me/web3clubtoken" target="_blank"> <div className="staking">   <span>Join Our Group chat</span>  <span><img src="./assets/img/arror-right.svg" alt="" /></span>   </div></a>
             </div>
           </div>
           <div className="right"   >
@@ -76,13 +76,13 @@ export default function Home() {
           <div className="left" data-aos="fade-right">
             <img src="./assets/img/01.svg" alt="" />
             <h3 data-aos="fade-up" >Web3Club Staking Info</h3>
-            <p data-aos="fade-up" > When a user stakes their Web3Club tokens they will earn 1.5% a day with an APY of 265% (minus any token taxation). The 1.5% will be paid out in Web3Club coins, meaning if the price of Web3Club appreciates the overall payout in USD also increases. Users can not withdraw the initial deposit and will get their initial deposit in 67 days (1.5% x 67= 100%; 100%=initial deposit) and the rest of the 298 days will be pure profit.</p>
+            <p data-aos="fade-up" > When a holder stakes Web3Club they earn 1.5% a day with an APY of 265% (minus any token taxation). The 5% of all transactions in USDT coins, the price of Web3Club go up payout in USD increases. Users can not withdraw the initial deposit and will get their initial deposit in 67 days.</p>
             <img className="bg-img" src="./assets/img/stake.png" alt="" />
           </div>
           <div className="right" data-aos="fade-left">
             <img src="./assets/img/02.svg" alt="" />
             <h3 data-aos="fade-up">Reflection Tokenomics</h3>
-            <p data-aos="fade-up"> Web3Club has the ability to implement reflection tokenomics. However, because we are offering high apy staking initially to our users we will not turn on the reflection tokenomics until all our staking contracts can no longer pay out rewards to users. We believe since I Web3Club is a fair launch token, the majority of which is held by the community, reflections will benefit all users when no more rewards can no longer get paid out</p>
+            <p data-aos="fade-up"> Web3Club has the ability to implement reflection tokenomics. Web3Club is a fair launch in pinksale, the majority of which is held by the community on a governance, reflections will benefit all holders!</p>
             <img className="bg-img" src="./assets/img/nft.png" alt="" />
           </div>
         </div>
@@ -97,13 +97,13 @@ export default function Home() {
 
           <div className="bottom">
             <div className="nomics" data-aos="flip-up">
-              <h3>2% Staking Fee</h3>
-              <p>2% of all transactions will go to paying out all stakers.</p>
+              <h3>5% Staking Fee</h3>
+              <p>5% of all transactions go to paying all stakers.</p>
             </div>
 
             <div className="nomics" data-aos="fade-down">
               <h3>1% Burn</h3>
-              <p>1% of all transactions will be burnt. This burn mechanism will reduce the total supply of Web3Club over time.</p>
+              <p>1% Auto-Burn reduce the total supply of Web3Club over time.</p>
             </div>
 
             <div className="nomics" data-aos="flip-down">
@@ -113,26 +113,25 @@ export default function Home() {
 
             <div className="nomics" data-aos="flip-up" >
               <h3>10% Tokens To Initial Staking Pool</h3>
-              <p>6,010 tokens will be palced in a smart contract to payout initial stakers who stake Web3Club.</p>
+              <p>10000 tokens will be palced in a smart contract to payout initial stakers who stake Web3Club.</p>
             </div>
 
             <div className="nomics" data-aos="flip-down" >
               <h3>5% For Future Rewards</h3>
-              <p>3,005 tokens will be placed in a token lock smart contract that will lock these tokens for 95 days.
-                These tokens will be used in the future for staking rewards when 10% initial rewards run out. Web3Club is not an inflationary token, no more can ever be minted,
-                however we will think of a way to reward users long term throughout the years.</p>
+              <p>5000 tokens go lock on smart contract.
+                Will be used in the future for staking rewards. holders long term throughout the years.</p>
             </div>
 
             <div className="nomics" data-aos="flip-up">
               <h3>1% To Marketing Wallet</h3>
-              <p>601 tokens will be held by the developer for marketing and development purposes.</p>
+              <p>1000 tokens will hold by developer for marketing and development purposes.</p>
               <br/>
               <a href="https://bscscan.com/address/" target="_blank" className="dev-wallet-address">Dev Wallet</a>
             </div>
 
             <div className="nomics" data-aos="flip-down">
               <h3>4% To Developers</h3>
-              <p>2,404 tokens will be locked away in a smart contract for two years and this will be the developers tokens for creating Web3Club.</p>
+              <p>4000 tokens will be locked away in a smart contract for two years and this will be the developers tokens for creating Web3Club.</p>
               <br/>
               <a href="https://bscscan.com/address/" target="_blank" className="dev-wallet-address">Dev Wallet</a>
             </div>
@@ -151,10 +150,10 @@ export default function Home() {
               <div className="one">
                 <h3>Developement</h3>
                 <ul>
-                  <li>Create the Web3Club smart contract</li>
-                  <li> Create a website for Web3Club</li>
+                  <li>Web3Club smart contract</li>
+                  <li> Futuristic Website for Web3Club</li>
                   <li> Get Web3Club audited</li>
-                  <li> Do a fair launch for Web3Club</li>
+                  <li> Do a fair launch on pancakeswap for Web3Club</li>
                 </ul>
                 <img src="./assets/img/one.png" />
               </div>
@@ -166,7 +165,7 @@ export default function Home() {
               <div className="two">
                 <h3>Marketing & Initial Community Building</h3>
                 <ul>
-                  <li>Once the fair launch happens marketing will be necessary to build the initial community for Web3Club.</li>
+                  <li>Fair launch on pinksale, and marketing AMA's be necessary to build the initial community for Web3Club.</li>
                 </ul>
                 <img src="./assets/img/two.png" />
               </div>
@@ -176,9 +175,9 @@ export default function Home() {
               <div className="three">
                 <h3>Covering The Basics</h3>
                 <ul>
-                  <li>Apply for coinmarketcap</li>
-                  <li>Apply for coingecko</li>
-                  <li>Apply for blockfolio</li>
+                  <li>Apply for Coinmarketcap</li>
+                  <li>Apply for Coingecko</li>
+                  <li>Apply for Certik</li>
                   <li>Apply for DappRadar and similar sites</li>
                   <li>Continue Marketing Campaigns</li>
                 </ul>
@@ -192,7 +191,7 @@ export default function Home() {
               <div className="four">
                 <h3>Setting Up Treasury</h3>
                 <ul>
-                  <li>The treasury will play a key role in yield earnings that will keep our protocol sustainable (more info on our project details page).</li>
+                  <li>The treasury is a gold in yield earnings that protocol sustainable.</li>
                 </ul>
                 <img src="./assets/img/four.png" />
               </div>
@@ -204,16 +203,16 @@ export default function Home() {
       <section className="footer">
         <div className="footer-container">
           <div className="description">
-            <p>Our community grows stronger every day. Please follow our social platforms to get the most up-to-date, accurate information.</p>
-            <p>Using the links below, you can join our various groups.</p>
+            <p>Our community grows stronger every day. Please go a social links and up-to-date, accurate information.</p>
+            <p>Using the links, you can join a groups.</p>
           </div>
           <div className="socials">
-            <a target="_blank" href="https://twitter.com/"> <img src="./assets/img/social-icons/twitter.svg" alt="twitter" /></a>
-            <a target="_blank" href="https://t.me/">  <img src="./assets/img/social-icons/telegramm.svg" alt="telegram" /></a>
+            <a target="_blank" href="https://twitter.com/Web3clubT"> <img src="./assets/img/social-icons/twitter.svg" alt="twitter" /></a>
+            <a target="_blank" href="https://t.me/web3clubtoken">  <img src="./assets/img/social-icons/telegramm.svg" alt="telegram" /></a>
           </div>
 
           <div className="partners">
-            <a target="_blank" href="https://medium.com/"><div>Medium</div></a>
+            <a target="_blank" href="https://poocoin.com/"><div>POOCOIN</div></a>
             <a target="_blank" href="https://bscscan.com/token/"><div>BSCSCAN</div></a>
             {/* <a target="_blank" href="#"> <div>CoinMarketCap (Coming soon)</div></a>
             <a target="_blank" href="#">  <div>CoinGecko (Coming soon)</div></a> */}
