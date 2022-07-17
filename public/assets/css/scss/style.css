@@ -98,7 +98,7 @@ section:not(:first-child) {
 */
 /*Navigation*/
 .header {
-  background-color: #09e6da;
+  background-color: #7816c2;
   position: fixed;
   width: 100%;
   display: flex;
@@ -413,7 +413,7 @@ section:not(:first-child) {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: #00FF00;
+  background-color: #0a5ae5;
   overflow: hidden;
 }
 .hero::before {
