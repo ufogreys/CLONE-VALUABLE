@@ -186,7 +186,7 @@ section:not(:first-child) {
   }
 }
 .header-container .right-side .menu ul li a:hover {
-  color: #ff43f8;
+  color: #ffffff;
 }
 .header-container .right-side .menu span {
   display: none;
@@ -263,7 +263,7 @@ section:not(:first-child) {
   }
 }
 .header-container .right-side .connect-mobile a div.button {
-  background-image: linear-gradient(90deg, #111111 27.75%, #d3d3d3 100%);
+  background-image: linear-gradient(90deg, #2dffca 27.75%, #8d03ff 100%);
   padding: 14px 35px;
   border-radius: 25px;
   width: 182px;
