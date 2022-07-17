@@ -413,7 +413,7 @@ section:not(:first-child) {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: #68e4fe;
+  background-color: #eefcff;
   overflow: hidden;
 }
 .hero::before {
