@@ -249,7 +249,7 @@ section:not(:first-child) {
   }
 }
 .header-container .right-side .connect a div.button:hover {
-  background-image: linear-gradient(90deg, #111111 100%, #d3d3d3 27.75%);
+  background-image: linear-gradient(90deg, #2dffca 100%, #8d03ff 27.75%);
 }
 .header-container .right-side .connect-mobile a {
   color: #fff;
@@ -282,7 +282,7 @@ section:not(:first-child) {
   }
 }
 .header-container .right-side .connect-mobile a div.button:hover {
-  background-image: linear-gradient(90deg, #111111 27.75%, #d3d3d3 100%);
+  background-image: linear-gradient(90deg, #2dffca 27.75%, #8d03ff 100%);
 }
 .header-container .right-side .hamburger {
   display: none;
