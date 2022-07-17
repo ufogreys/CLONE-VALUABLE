@@ -212,8 +212,8 @@ export default function Home() {
           </div>
 
           <div className="partners">
-            <a target="_blank" href="https://poocoin.com/"><div>POOCOIN</div></a>
-            <a target="_blank" href="https://bscscan.com/token/"><div>BSCSCAN</div></a>
+            <a target="_blank" href="https://poocoin.app/tokens"><div>POOCOIN</div></a>
+            <a target="_blank" href="https://bscscan.com/"><div>BSCSCAN</div></a>
             {/* <a target="_blank" href="#"> <div>CoinMarketCap (Coming soon)</div></a>
             <a target="_blank" href="#">  <div>CoinGecko (Coming soon)</div></a> */}
           </div>
