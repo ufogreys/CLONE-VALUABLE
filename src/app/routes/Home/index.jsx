@@ -126,7 +126,7 @@ export default function Home() {
               <h3>1% To Marketing Wallet</h3>
               <p>1000 tokens will hold by developer for marketing and development purposes.</p>
               <br/>
-              <a href="https://bscscan.com/address/" target="_blank" className="dev-wallet-address">Dev Wallet</a>
+              <a href="https://bscscan.com/" target="_blank" className="dev-wallet-address">Dev Wallet</a>
             </div>
 
             <div className="nomics" data-aos="flip-down">
