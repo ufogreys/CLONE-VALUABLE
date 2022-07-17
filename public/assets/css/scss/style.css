@@ -340,10 +340,10 @@ section:not(:first-child) {
   }
 }
 .about-container .left {
-  background: linear-gradient(90deg, #2dffca 100%, #8d03ff 27.75%);
+  background: linear-gradient(90deg, #ffffff 100%, #d3d3d3 27.75%);
   /* shadow 1 */
   position: relative;
-  box-shadow: 0px 16px 50px rgba(181, 181, 181, 0.15);
+  box-shadow: 0px 16px 50px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
   padding: 50px 150px 50px 50px;
 }
