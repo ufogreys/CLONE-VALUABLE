@@ -107,8 +107,8 @@ export default function Home() {
             </div>
 
             <div className="nomics" data-aos="flip-down">
-              <h3>80% Tokens to PancakeSwap</h3>
-              <p>48,080 tokens will be added to pancakeswap for users to trade.</p>
+              <h3>51% Tokens to PancakeSwap</h3>
+              <p>51000 tokens will be added to pancakeswap for users to trade.</p>
             </div>
 
             <div className="nomics" data-aos="flip-up" >
