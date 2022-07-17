@@ -60,7 +60,7 @@ export default function Home() {
             <p>Web3Club is a low supply deflationary BEP20 token on the BNB Chain (A.K.A Binance Smart Chain). Web3Club is a fair-launched project with no presale, venture capitalist funding, or any type of private investors that would have any advantage over new investors. The initial and max supply of Web3Club is 100000 coins. Over time as users buy, sell, make transfers, and stake Web3Club (W3C) the supply will be taken out of circulation which in theory can attribute to price appreciation.</p>
 
             <div className="button-group">
-              <a href="https://pancakeswap.finance/info/token/" target="_blank"><div className="buy"> <span>Buy Web3Club Now </span> <span><img src="./assets/img/arror-right.svg" alt="" /></span> </div></a>
+              <a href="https://pancakeswap.finance/info/token/" target="_blank"><div className="buy"> <span>Buy now Web3Club</span> <span><img src="./assets/img/arror-right.svg" alt="" /></span> </div></a>
               <a href="https://solidity.finance/audits/" target="_blank"><div className="buy"> <span>Audit</span> <span><img src="./assets/img/arror-right.svg" alt="" /></span> </div></a>
               <a href="https://t.me/" target="_blank"> <div className="staking">   <span>Join Our Group chat</span>  <span><img src="./assets/img/arror-right.svg" alt="" /></span>   </div></a>
             </div>
