@@ -340,7 +340,7 @@ section:not(:first-child) {
   }
 }
 .about-container .left {
-  background: linear-gradient(90deg, #55c2da 100%, #5adbb5 27.75%);
+  background: linear-gradient(90deg, #ffffff 100%, #ffffff 27.75%);
   /* shadow 1 */
   position: relative;
   box-shadow: 0px 16px 50px rgba(0, 0, 0, 0.15);
