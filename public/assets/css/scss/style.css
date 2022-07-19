@@ -98,7 +98,7 @@ section:not(:first-child) {
 */
 /*Navigation*/
 .header {
-  background-color: #7b63fe;
+  background-color: #f7fcfb;
   position: fixed;
   width: 100%;
   display: flex;
