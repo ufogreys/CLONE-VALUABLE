@@ -32,13 +32,13 @@ export default function Home() {
               </a>
             </div>
             <div className="connect">
-              <a href="https://medium.com/" target="_blank">
+              <a href="https://web3club.gitbook.io/whitepaper/" target="_blank">
                 <div className="button animation animated fadeInUp"><h5>Whitepaper</h5> </div>
               </a>
             </div>
 
             <div className="connect-mobile">
-              <a href="https://medium.com/">
+              <a href="https://web3club.gitbook.io/whitepaper/">
                 <div className="button animation animated fadeInUp"><h5>Whitepaper</h5> </div>
               </a>
             </div>
