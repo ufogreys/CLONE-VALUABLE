@@ -55,9 +55,9 @@ export default function Home() {
           <div className="left">
             <img className="mobile-visible hero-logo" src="assets/img/hero-logo.svg" />
 
-            <h1>Web3Club Coins!</h1>
+            <h1>Web3Club!</h1>
 
-            <p>Web3Club is a governance deflationary BEP20 token. Web3Club is a presale, venture capitalist funding. The initial and max supply of Web3Club is 100000 coins. As timer traders buy, sell, stake, make transfers, and  Web3Club (W3C) the supply will go down of circulation which in theory can attribute to price go up.</p>
+            <p>Web3Club is a governance deflationary BEP20 token. Web3Club is a presale. The initial and max supply of Web3Club is 100000 coins. As timer traders buy, sell, stake, make transfers, and  Web3Club (W3C) the supply will go down of circulation which in theory can attribute to price go up.</p>
 
             <div className="button-group">
               <a href="https://www.pinksale.finance/" target="_blank"><div className="buy"> <span>Buy now Web3Club</span> <span><img src="./assets/img/arror-right.svg" alt="" /></span> </div></a>
@@ -189,7 +189,7 @@ export default function Home() {
               <div className="four">
                 <h3>Setting Up Treasury</h3>
                 <ul>
-                  <li>The treasury is a gold in yield earnings that protocol sustainable.</li>
+                  <li>The treasury is a gold in yield earnings that protocol sustainable.  We invest in founders that are building game changing business models in the blockchain sector.</li>
                 </ul>
                 <img src="./assets/img/four.png" />
               </div>
