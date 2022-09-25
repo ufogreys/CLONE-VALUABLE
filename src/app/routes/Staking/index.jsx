@@ -104,7 +104,7 @@ export default function Staking() {
                         <div className="nutrition-stat">
                             <div className="item">
                                 <span className="property">Initial Supply</span>
-                                <span className="value"> 100000</span>
+                                <span className="value"> 1000000</span>
                             </div>
 
                             <div className="item">
