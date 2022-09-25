@@ -42,7 +42,7 @@ export default function Staking() {
                             <a href="https://medium.com/" target="_blank">Staking Details</a>
                         </div>                        
                         <ConnectBtn />
-                        <h2>TrinitySwap staking contract payout to investors 0 a day with a 265% ROI. TrinitySwap appreciates in value the higher your payout is in USD.
+                        <h2>TrinitySwap staking payout to investors 0,0225% every 6 minuts. TrinitySwap appreciates in value the higher.
                             Please read our documents for staking details.
                         </h2>
                     </div>
