@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import { useSearchParams } from "react-router-dom"
-import "./Home.css";
+import "./staking.css";
 
 import useVCStaking from "../../hooks/useVCStaking";
 import useBalance from "../../hooks/useBalance";
