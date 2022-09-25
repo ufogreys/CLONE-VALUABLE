@@ -9,7 +9,6 @@ function App() {
     <div>
       <WalletModal />
       <Routes>
-        <Route path="/" element={<Home/>}/>
         <Route path="/staking" element={<Staking/>}/>
       </Routes>
     </div>
