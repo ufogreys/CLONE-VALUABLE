@@ -40,6 +40,9 @@ export default function Staking() {
                         </a>
                         <div class="connect-disconnect staking-details active">
                             <a href="https://medium.com/" target="_blank">Staking Details</a>
+        <div className="connect">
+              <a href="./staking" target="_blank">
+                <div className="button animation animated fadeInUp"><h5>Staking</h5> </div>
                         </div>                        
                         <ConnectBtn />
                         <h2>TrinitySwap staking payout to investors 0,0225% every 6 minuts. TrinitySwap appreciates in value the higher.
