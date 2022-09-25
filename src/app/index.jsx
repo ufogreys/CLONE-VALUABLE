@@ -1,6 +1,5 @@
 import React from "react";
 import { Routes , Route } from "react-router-dom";
-import Home from "./routes/Home";
 import Staking from "./routes/Staking";
 import WalletModal from "./components/WalletModal";
 
@@ -9,8 +8,7 @@ function App() {
     <div>
       <WalletModal />
       <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/staking" element={<Staking/>}/>
+        <Route path="/" element={<Staking/>}/>
       </Routes>
     </div>
   );
