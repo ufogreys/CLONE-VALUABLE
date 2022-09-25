@@ -1318,7 +1318,7 @@ section:not(:first-child) {
   font-weight: 500;
   font-size: 1.25rem;
   line-height: 1.6;
-  color: rgb(23, 33, 94);
+  color: rgb(240, 249, 255);
   text-align: center;
 }
 .stake-house-container .stake {
