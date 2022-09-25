@@ -66,7 +66,7 @@ export default function Staking() {
 
                         <div className="stake-value">
                             <input id="amount" type="text" className="" value={depositVCAmount} onChange={(e) => setDepositVCAmount(e.currentTarget.value)} />
-                            <span>0</span>
+                            <span></span>
                         </div>
 
                         <div className="stake-button active">
