@@ -1,223 +1,140 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect, useContext } from "react";
+import { useSearchParams } from "react-router-dom"
+import "./staking.css";
+
+import useVCStaking from "../../hooks/useVCStaking";
+import useBalance from "../../hooks/useBalance";
+import VCUiContext from "../../contexts/VCUiContext";
+
+import { numberWithCommas } from "../../util";
 import ConnectBtn from "../../components/Header/ConnectBtn";
-import "./home.css";
+import { useWeb3React } from "@web3-react/core";
 
-export default function Home() {
+export default function Staking() {
+    const {
+        account,
+    } = useWeb3React();
 
-  return (
-    <>
-      <section className="header">
-        <div className="header-container">
-          <div className="logo">
-            <a href="/"> <img src="./assets/img/logo.svg" /></a>
-          </div>
+    const { lastUpdatedTime } = useContext(VCUiContext);
+    const { vcBalance, totalDeposit, totalWithdrawn, dividends, bonus, totalSupply } =
+        useBalance(lastUpdatedTime);
 
-          <div className="right-side">
+    const [searchParams, setSearchParams] = useSearchParams()
+    const refAddress = searchParams.get("ref");
 
-            <div className="menu">
-              <span className="close dn"> &#x2715 </span>
+    const {
+        depositVCAmount,
+        setDepositVCAmount,
+        onClaim,
+        onStake,
+        onReinvest
+    } = useVCStaking();
 
-              <ul>
-                <li data-aos="fade-in" data-aos-duration="3000"><a href="#about">Home</a> </li>
-                <li data-aos="fade-in" data-aos-duration="3000"><a href="#roadmap">Roadmap</a> </li>
-                <li data-aos="fade-in" data-aos-duration="3000"><a href="#tokenomics">Tokenomics</a> </li>
-                <li data-aos="fade-in" data-aos-duration="3000"><a href="https://poocoin.app/tokens/" target="_blank">Charts</a> </li>
-                <li className="mobile-visible" data-aos="fade-in" data-aos-duration="3000"><a href="/staking">Staking</a> </li>
-              </ul>
-            </div>
+    return (
+        <>
+            <section className="stake-house">
+                <div className="stake-house-container">
+                    <div className="intro">
+                        <a href="/">
+                            <img src="./assets/img/logo.svg" />
+                        </a>
+                        <div class="connect-disconnect staking-details active">
+                            <a href="https://medium.com/" target="_blank">Staking Details</a>
+                        </div>                        
+                        <ConnectBtn />
+                        <h2>TrinitySwap staking payout to investors 0,0225% every 6 minuts. TrinitySwap appreciates in value the higher.
+                            Please read our documents for staking details.
+                        </h2>
+                    </div>
 
-            <div className="connect">
-              <a href="./staking" target="_blank">
-                <div className="button animation animated fadeInUp"><h5>Staking</h5> </div>
-              </a>
-            </div>
-            <div className="connect">
-              <a href="https://web3club.gitbook.io/whitepaper/" target="_blank">
-                <div className="button animation animated fadeInUp"><h5>Whitepaper</h5> </div>
-              </a>
-            </div>
+                    <div className="stake">
+                        <div className="stake-stat">
+                            <div className="item">
+                                <span className="property">Wallet Balance</span>
+                                <span className="value"> <span id="contract">{vcBalance.toFixed(6)}</span> TrinitySwap</span>
+                            </div>
 
-            <div className="connect-mobile">
-              <a href="https://web3club.gitbook.io/whitepaper/">
-                <div className="button animation animated fadeInUp"><h5>Whitepaper</h5> </div>
-              </a>
-            </div>
-            <div className="hamburger">
-              <img src="./assets/img/hamburger.svg" />
-            </div>
-          </div>
-        </div>
-      </section>
+                            <div className="item">
+                                <span className="property">Your Total Deposit</span>
+                                <span className="value"> <span id="contract">{totalDeposit.toFixed(6)}</span> TrinitySwap</span>
+                            </div>
+                            <div className="item">
+                                <span className="property">Total Claimed</span>
+                                <span className="value"> <span id="contract">{totalWithdrawn.toFixed(6)}</span> TrinitySwap</span>
+                            </div>
+                        </div>
 
-      <section className="hero">
-        <div className="hero-container">
+                        <div className="stake-value">
+                            <input id="amount" type="text" className="" value={depositVCAmount} onChange={(e) => setDepositVCAmount(e.currentTarget.value)} />
+                            <span></span>
+                        </div>
 
-          <div className="left">
-            <img className="mobile-visible hero-logo" src="assets/img/hero-logo.svg" />
+                        <div className="stake-button active">
+                            <div className="" onClick={() => onStake(refAddress)}>
+                                DEPOSIT
+                            </div>
+                        </div>
 
-            <h1>Web3Club!</h1>
+                        <div className="stake-rewards">
+                            <span className="property">Your Rewards</span>
+                            <span className="value"> <span id="contract">{dividends.toFixed(6)}</span> TrinitySwap</span>
+                        </div>
 
-            <p>Web3Club is a governance deflationary BEP20 token. Web3Club is a presale. The initial and max supply of Web3Club is 100000 coins. As timer traders buy, sell, stake, make transfers, and  Web3Club (W3C) the supply will go down of circulation which in theory can attribute to price go up.</p>
+                        <div className="stake-rewards">
+                            <span className="property">Your Referral Bonus</span>
+                            <span className="value"> <span id="contract">{bonus.toFixed(6)}</span> TrinitySwap</span>
+                        </div>
 
-            <div className="button-group">
-              <a href="https://www.pinksale.finance/" target="_blank"><div className="buy"> <span>Buy now Web3Club</span> <span><img src="./assets/img/arror-right.svg" alt="" /></span> </div></a>
-              <a href="https://certik.com/projects/" target="_blank"><div className="buy"> <span>Audit</span> <span><img src="./assets/img/arror-right.svg" alt="" /></span> </div></a>
-              <a href="https://t.me/web3clubtoken" target="_blank"> <div className="staking">   <span>Join Our Group chat</span>  <span><img src="./assets/img/arror-right.svg" alt="" /></span>   </div></a>
-            </div>
-          </div>
-          <div className="right"   >
-            <img src="assets/img/hero-logo.svg" />
-          </div>
-        </div>
-      </section>
+                        <div className="stake-action-buttons">
+                            <div className="active" onClick={() => onReinvest()}>
+                                COMPOUND
+                            </div>
 
-      <section className="about" id="about">
-        <div className="about-container">
-          <div className="left" data-aos="fade-right">
-            <img src="./assets/img/01.svg" alt="" />
-            <h3 data-aos="fade-up" >Web3Club Staking Info</h3>
-            <p data-aos="fade-up" > When a holder stakes Web3Club they earn 1.5% a day with an APY of 265% (minus any token taxation). The 5% of all transactions in USDT coins, the price of Web3Club go up payout in USD increases. Users can not withdraw the initial deposit and will get their initial deposit in 67 days.</p>
-            <img className="bg-img" src="./assets/img/stake.png" alt="" />
-          </div>
-          <div className="right" data-aos="fade-left">
-            <img src="./assets/img/02.svg" alt="" />
-            <h3 data-aos="fade-up">Reflection Tokenomics</h3>
-            <p data-aos="fade-up"> Web3Club has the ability to implement reflection tokenomics. Web3Club is a fair launch in pinksale, the majority of which is held by the community on a governance, reflections will benefit all holders!</p>
-            <img className="bg-img" src="./assets/img/nft.png" alt="" />
-          </div>
-        </div>
-      </section>
+                            <div className="active" onClick={() => onClaim()}>
+                                WITHDRAW
+                            </div>
+                        </div>
 
-      <section className="tokenomics" id="tokenomics">
-        <div className="tokenomics-container">
-          <div className="top">
-            <h1 data-aos="fade-up">Tokenomics</h1>
-            <p data-aos="fade-up"> With a total of 100000 Web3Club tokens, the following amounts have been allotted for different purposes:</p>
-          </div>
 
-          <div className="bottom">
-            <div className="nomics" data-aos="flip-up">
-              <h3>5% Staking Fee</h3>
-              <p>5% of all transactions go to paying all stakers.</p>
-            </div>
 
-            <div className="nomics" data-aos="fade-down">
-              <h3>1% Burn</h3>
-              <p>1% Auto-Burn reduce the total supply of Web3Club over time.</p>
-            </div>
+                    </div>
 
-            <div className="nomics" data-aos="flip-down">
-              <h3>51% Tokens to PancakeSwap</h3>
-              <p>51000 tokens will be added to pancakeswap for users to trade.</p>
-            </div>
+                    <div className="nutrition">
+                        <h2>Token Facts</h2>
+                        <div className="nutrition-stat">
+                            <div className="item">
+                                <span className="property">Initial Supply</span>
+                                <span className="value"> 1000000</span>
+                            </div>
 
-            <div className="nomics" data-aos="flip-up" >
-              <h3>10% Tokens To Initial Staking Pool</h3>
-              <p>10000 tokens will be palced in a smart contract to payout initial stakers who stake Web3Club.</p>
-            </div>
+                            <div className="item">
+                                <span className="property">Current Supply</span>
+                                <span className="value"> {numberWithCommas(totalSupply.toFixed(6))}</span>
+                            </div>
+                        </div>
+                    </div>
 
-            <div className="nomics" data-aos="flip-down" >
-              <h3>5% For Future Rewards</h3>
-              <p>5000 tokens go lock on smart contract.
-                Will be used in the future for staking rewards. holders long term throughout the years.</p>
-            </div>
+                    <div className="referral">
+                        <h2> Referral Link</h2>
+                        <input className="referral-link" id="ref-address" value={`https://trinityswap.app/staking?ref=${account?account:''}`} readOnly/>
+                        <p>Earn 0,5% of the TrinitySwap used to stake TrinitySwap from anyone your referral link</p>
+                    </div>
 
-            <div className="nomics" data-aos="flip-up">
-              <h3>1% To Marketing Wallet</h3>
-              <p>1000 tokens will hold by developer for marketing and development purposes.</p>
-              <br/>
-            </div>
+                    <div className="social-handles">
+                        <div>
+                            <a href="https://bscscan.com/address/0x2FB211F58150adb8c147654650E5950B227fDb00" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVRo3u2av3HbMBSHPycunDsXcsWU4gSmJzA9ge0FaHkCyRPEnkDSBOJxActVSjFVylBdOsglOzYq0qUg7FAQSIkU+Cd3/t2pEIgD34cH4AEPhA91S0d1NWzZngP0lOIoFkHSaRBp+A1wCbgFVVdABLwAYSyCVesglu31gQFwB/QrNhMBU2B+iLcqgUiAbxLClBIJNKkCVBrEsr1HYMj2+DelFXAfiyCsBUTOgRng1ASgahKL4MEoiGV7LvBMfV7IUwRc7TPUPu0BMQAWLUBA6v2FZXs7310IkhlObcoh7chCfS6A6AM/gZOWQQC+np6d99fJ8iWvQpFHZrQznPI0sGzvphSInBduA8b5gB2L4OjtB9ySxhSdZnnzZWtoyYrfaWBIxSK4WCfLDaPXyfL36dn5F/QdeQL8WSfLUH2g88iIbg0pVUOdV3Qgd21bukM90s7OB5GTqW/wpREQyl9isN2hWnCs/L82CLAVkS3bGwFjA+33LNtzs/sxdWjdGAKZ6rYVsQgmhtrf0jtIzomuqlZ1GZxRpAWhmbhhSk+qx7Nz5HzPRhJgDrzK/5ekC0S/IQg/FsGjWpgF2deQq1gEkVpo2d6C+r3qxyK41z3YuY1XFOogpH40CWHZ3kCeViuBtCUVwkFZxv8HkIkC0UOzMz8u12ajSoCHWAS+Uv6MJm+QBVm1bXlGIelw2rDJsr0ZmwtKqAN5pSPSpYIkxEApjnQgIWnSrVOSc2KsgVhlg+L7ZC+bEDOgaE+IBfqM5oa96qo1bxBkugPCAX6RnxDciFsqSG6WwqAeSM/pfgHESEL0c6okKJ2+sfzGIvAt2xtT41G3aCsvU1DqyqTTVuZeFxCnHKaECkt5xgu7IACe1AJdQJxQLdseSoBS9xwyrzxm/+S4r7sc0iax5URT870J+khbSRLgG+V2zAnp/NrqqMJsvHwZpGv2CgOSCY5hSYA33cYimOse1HYZqhjfI40FQ6ofwArvS+q81e2RJjOuOTypkXugqgVEzi1XGu8aajaMRXC1q9Kht7ou6WrzdiXdM9kx7OGJSiByuIzYfZduQk+6JEOeSp0QM8ueUyNABFyUgYDu3bNXjlOd+fLh0EBr+lsUl38JO0dTLZGGR8ASg9+ifKhr+gvf9S3/pZ723AAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAASdEVYdEVYSUY6T3JpZW50YXRpb24AMYRY7O8AAAAASUVORK5CYII=" alt="" width="48" height="48" /></a>
+                        </div>
 
-            <div className="nomics" data-aos="flip-down">
-              <h3>4% To Developers</h3>
-              <p>4000 tokens will be locked away in a smart contract for two years and this will be the developers tokens for creating Web3Club.</p>
-              <br/>
-            </div>
-          </div>
-        </div>
-      </section>
+                        <div>
+                            <a href="https://t.me/trinityswap" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAADW0lEQVRo3u2aP3KbQBSHvyQuPRNUqTScQOQG+ARWLkCsE0Tp0sU6QewTWOYCQSewbmB0AnBJtylUpEuxawVhFnYRCM3EvxmPR+Lt4316+/cBvOm09K5rh2Mv9AEfcDUmGZDkaZScFMjYCx1gClyp/6YSwBpYAXGeRmIQkLEXusAPFbxz4O8hgBhY5GmUHQVEZWCuIPrQAri1zZAViOr/v9D3/66UAbM8jdamDd5bQFwDT0eAQN3jUd3TSEYZGXvhPWDstGMt8zSaNRl9OHEIAP98NHG3YrNqDTL2wjnwfUCIIszzVmwSnYG2a429MAAehyYo6ZNuIa0EUVPssQa2jTIFI8oXdLPW/AQhUDHNqy68yohasdOhI26QV94BVGWkrxW7SWsL21cx7oEUNoDHUgZ8A0Z5Gl0Ct4btpirWnc7KBhy+ATRRDNxVbEF+G7Z3VKxLHchVj8EL4A65Umcam48W/q7qQKY9AKyBhzyNlga2voXfoPhhB6J2tl1J8K/7JMULqm87mqy4Fvdwxl7ov/gvDvYuQDJghpweZxUQN8ip/VrT3gZkz/7sACdFLZHdZ111UWX7Xv1YCRWzk9oS2cpHZv7VGLFRBjzQcJpTWXiZ9xPgUmPvHBBLK5AY+evHdUalLDRBQLuufdEGJAE+mxQHSlkwgQCYtADZyQbEBMBFZiGwhIB2Xeu5DcgUuTVIkGMjLmZHHcJ+lAIyOqYqBYZ2lSqCZIZtfPX3U0EJ5IznluyMIVQm22gXcxEkaeHI13wfW2QC2k/9u5h3C2LHtVi3vDttUNDmJsWYy+eRuCMQH1mX8g3tLwzttLGWQVbmfoxh5ga2bgv/e7FWZUR0COMgJ4XHhgEdWPoV1GVEzfWxqTcLBcBTVXYsx9KLluV1qerMvugBBPTZCSz9COQBbU+6utYN/RchlsiV+St2q/oiT6Ob8pe6lf0W+EK/ta3rFm0yNAWKupKpj6w2npK0JVPt8xHVwGZ17luzukW7thq/FZvkfDRx6eYYfIiWeRrVTkKNz0e2YrMaGMZo82n8DFE9Brs/MsTMsIxk/TA0UDBuzwAZ8jSamDZo7FpFbcUmOx9NHoA/HHgQqtECmYnMptH/+8JABZBDu1c4UMEP+wpHDZjPAC/VvOnU9BdAxzlbow3rDQAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAASdEVYdEVYSUY6T3JpZW50YXRpb24AMYRY7O8AAAAASUVORK5CYII=" alt="" width="48" height="48" /></a>
+                        </div>
 
-      <section className="roadmap" id="roadmap">
-        <div className="roadmap-container">
-          <div className="top">
-            <h1>Roadmap</h1>
-          </div>
-
-          <div className="bottom">
-            <div className="map" data-aos="fade-up-right" >
-              <div className="one">
-                <h3>Developement</h3>
-                <ul>
-                  <li>Web3Club smart contract</li>
-                  <li> Futuristic Website for Web3Club</li>
-                  <li> Get Web3Club audited</li>
-                  <li> Do a fair launch on pancakeswap for Web3Club</li>
-                </ul>
-                <img src="./assets/img/one.png" />
-              </div>
-              <div className="roadmap-line"><img src="./assets/img/roadmap-line.png" /></div>
-            </div>
-
-            <div className="map" data-aos="fade-up-left">
-              <div className="roadmap-line"><img src="./assets/img/roadmap-line2.png" /></div>
-              <div className="two">
-                <h3>Marketing & Initial Community Building</h3>
-                <ul>
-                  <li>Fair launch on pinksale, and marketing AMA's be necessary to build the initial community for Web3Club.</li>
-                </ul>
-                <img src="./assets/img/two.png" />
-              </div>
-            </div>
-
-            <div className="map" data-aos="fade-up-right">
-              <div className="three">
-                <h3>Covering The Basics</h3>
-                <ul>
-                  <li>Apply for Coinmarketcap</li>
-                  <li>Apply for Coingecko</li>
-                  <li>Apply for Certik</li>
-                  <li>Apply for DappRadar and similar sites</li>
-                  <li>Continue Marketing Campaigns</li>
-                </ul>
-                <img src="./assets/img/three.png" />
-              </div>
-              <div className="roadmap-line"><img src="./assets/img/roadmap-line.png" /></div>
-            </div>
-
-            <div className="map" data-aos="fade-up-right"  >
-              <div className="roadmap-line"><img src="./assets/img/roadmap-line2.png" /></div>
-              <div className="four">
-                <h3>Setting Up Treasury</h3>
-                <ul>
-                  <li>The treasury is a gold in yield earnings that protocol sustainable.  We invest in founders that are building game changing business models in the blockchain sector.</li>
-                </ul>
-                <img src="./assets/img/four.png" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="footer">
-        <div className="footer-container">
-          <div className="description">
-            <p>Our community grows stronger every day. Please go a social links and up-to-date, accurate information.</p>
-            <p>Using the links, you can join a groups.</p>
-          </div>
-          <div className="socials">
-            <a target="_blank" href="https://twitter.com/Web3clubT"> <img src="./assets/img/social-icons/twitter.svg" alt="twitter" /></a>
-            <a target="_blank" href="https://t.me/web3clubtoken">  <img src="./assets/img/social-icons/telegramm.svg" alt="telegram" /></a>
-          </div>
-
-          <div className="partners">
-            <a target="_blank" href="https://poocoin.app/tokens"><div>POOCOIN</div></a>
-            <a target="_blank" href="https://bscscan.com/"><div>BSCSCAN</div></a>
-            {/* <a target="_blank" href="#"> <div>CoinMarketCap (Coming soon)</div></a>
-            <a target="_blank" href="#">  <div>CoinGecko (Coming soon)</div></a> */}
-          </div>
-          <div className="copyright"><p> Copyright © 2022 — Web3Club . | ALL RIGHTS RESERVED </p></div>
-        </div>
-      </section>
-    </>
-  );
+                        <div>
+                            <a href="https://twitter.com/SwapTrinity" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAD0UlEQVRo3u2aMVbjOBjHf7BTbMF761Ru4247zAnGdNMRLuBJTsBwgiEnAE4A+AKEE+DpttvkBPJ0484UKbbbQjKjcaRYsmNIMf/3eM/Ykvz9pE9fPkmG39ovHey6wTBKAyBWf4GhSA4UpciKvQMJo3QCfAQmwNixWqWgnoBFKbLqXUBUz0+BCw/jt0HdA7ddR6oTSBilU+Aas+v01Ry48R0hL5AwSsfAHZAMAKCrAGalyHLXCn94QCTAM/D3wBAgR3p6NDp+WVerf3YGolzpEfjzDSB0fToaHY/X1eqpN4iCuHtjAF2xC8xWEOVOj+8IocMcrKtVbitgnewqvAqGiUxddWoLAIdbKj3uGQTAo+pgNxA1L5KBjCmAGRCVIjsAToEbQ7nKcC9A/n5tyOhaYZQK7L/WeQ/Iy1JkJqMJozRGhvcCeFBGf7W0EzUzgENDg9MtEEUpslNkOuGrmQ0CoBTZshTZqBTZieqsiy1tbQAeuhTStFAvnWF2B5vmpcic4FX28FV1VmEpNlXlzCBqeMfY9aL14CVwjtmXm3KCUO0WpcjOge8ttkysIMDnlvecNV66AKIWQ73XHmGUXmOZ1DZbmyBJS+VYjZoOUylXi5CZq5fRFn1xKBProfhD86FDA3fASfOm6vUr4Er5b+zYXh/FyMDwM/xq2e02VciweK9GYedytKPWvBTZFfzqWoFDxQXShR6GgPCwo9Zf9YXuWrFDxUSNRDEgiIsdG2UPPSoBjNXQD6mzLpV8QUAmbnGHeq3SgsSbgATA80AjM+laUQcpOsBY0+qOuvAsX9UX+mT3AQFDBtpHYZRe4b8/tqov9BFZejays3W8mhu+owFa57+CqA2xwqORZIeu1XU1mm+ANB84agKIMEqvu07+MErv6BapfklGmyCt+0cGBcgk78J3dBTEtEsHoNZGtTaWui3LXJNyZM6TewAEyDk26QgBcFKKbFn/88FQ4AH7KnGJDHnfkPMp77DWSBSET2c1lesQNpAbZAQJDM/GwC0y+/UFmKh2kx4AtebNG7ZdlC+0r9CWyDmVm9xKpTEx8gAoof8ZSq1cbYC0gyhD/mX4hZGvKuTcKJoPtuVaM9w2Ft5SlzaXtm5ir6vVj6PRcUm/yLJL3Zcim9sebt2NX1er5dHo+PsewLQurVvPR/YAxml/wOnE6h1hnDc5fA9DY2SCNx4YoEJO7HvXCs6HofAaAB6A/xju2GEBnPukPNDvg4ExMpWZ7hDg1hegN4gGFCiYM/xHaYnM7RZ9V5s7/ahG+6CmBvpoMPwFmTEv+35/8lv7rP8Bk+NXaD4vbEEAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAAEnRFWHRFWElGOk9yaWVudGF0aW9uADGEWOzvAAAAAElFTkSuQmCC" alt="" width="48" height="48" /></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </>
+    );
 }
