@@ -47,7 +47,6 @@ export default function Staking() {
                         <h2>TrinitySwap staking payout to investors 0,0225% every 6 minuts. TrinitySwap appreciates in value the higher.
                             Please read our documents for staking details.
                         </h2>
-                    </div>
 
                     <div className="stake">
                         <div className="stake-stat">
