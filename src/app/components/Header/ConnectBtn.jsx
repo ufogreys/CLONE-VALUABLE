@@ -17,7 +17,7 @@ export default function ConnectBtn() {
   const { account, chainId } = useWeb3React();
   const { pathname } = useLocation();
 
-  const onStaking = pathname === "/staking";
+  const onStaking = pathname === "/";
 
   const chainSupported =
     (onStaking && (chainId === 56 || chainId === 97));
