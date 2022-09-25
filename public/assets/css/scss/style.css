@@ -1220,14 +1220,14 @@ section:not(:first-child) {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: 373737;
+  background-color: #000000;
   overflow: hidden;
 }
 .stake-house:before {
   content: "";
   height: 100%;
   width: 100%;
-  background: radial-gradient(circle at top right, rgba(23, 33, 94, 0.9) 0, 373737 25%);
+  background: radial-gradient(circle at top right, rgba(23, 33, 94, 0.9) 0, #373737 25%);
   position: fixed;
 }
 .stake-house-container {
