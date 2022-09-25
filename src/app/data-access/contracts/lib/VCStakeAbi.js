@@ -3,7 +3,7 @@ export default [
         "inputs": [
             {
                 "internalType": "address",
-                "name": "_In-Dex Sale",
+                "name": "_TrinitySwap",
                 "type": "address"
             }
         ],
